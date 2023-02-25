@@ -1,0 +1,17 @@
+if game.PlaceId == 12413542851 then
+
+starterGui:SetCore("SendNotification", {
+   Title = "GodWare Loaded!";
+   Text = "Loaded.";
+   Duration = 20;
+})
+else
+
+local starterGui = game:GetService("StarterGui")
+
+wait(1)
+starterGui:SetCore("SendNotification", {
+   Title = "Game Not Supported";
+   Text = "Please try the game in Drop Kick";
+   Duration = 20;
+})
