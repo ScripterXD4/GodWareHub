@@ -1,0 +1,638 @@
+-- applebee
+-- Version: 3.0
+-- Instances:
+local GodWareGui = Instance.new("ScreenGui")
+local Selectionrame = Instance.new("Frame")
+local BalantButton = Instance.new("TextButton")
+local WorldButton = Instance.new("TextButton")
+local RenderButton = Instance.new("TextButton")
+local UtilityButton = Instance.new("TextButton")
+local WorldFrame = Instance.new("Frame")
+local WorldLabel = Instance.new("TextLabel")
+local AntiVoidButton = Instance.new("TextButton")
+local ClickTPButton = Instance.new("TextButton")
+local SpeedJumpButton = Instance.new("TextButton")
+local BalantFrame = Instance.new("Frame")
+local BalantLabel = Instance.new("TextLabel")
+local AutoToxicButton = Instance.new("TextButton")
+local ClickTPButton_2 = Instance.new("TextButton")
+local SpeedJumpButton_2 = Instance.new("TextButton")
+local RenderFrame = Instance.new("Frame")
+local RenderLabel = Instance.new("TextLabel")
+local RenderLabel_2 = Instance.new("TextLabel")
+local UtilityFrame = Instance.new("Frame")
+local UtilityLabel = Instance.new("TextLabel")
+local SpamCreditsButton = Instance.new("TextButton")
+--Properties:
+GodWareGui.Name = "GodWareGui"
+GodWareGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+GodWareGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Selectionrame.Name = "Selectionrame"
+Selectionrame.Parent = GodWareGui
+Selectionrame.BackgroundColor3 = Color3.new(0.921569, 1, 0.054902)
+Selectionrame.BorderSizePixel = 0
+Selectionrame.Position = UDim2.new(0.0588620007, 0, 0.11413043, 0)
+Selectionrame.Size = UDim2.new(0, 131, 0, 258)
+Selectionrame.Active = true
+Selectionrame.Draggable = true
+
+BalantButton.Name = "BalantButton"
+BalantButton.Parent = Selectionrame
+BalantButton.BackgroundColor3 = Color3.new(1, 1, 1)
+BalantButton.BackgroundTransparency = 1
+BalantButton.BorderSizePixel = 0
+BalantButton.Position = UDim2.new(0, 0, -0.00343660638, 0)
+BalantButton.Size = UDim2.new(0, 131, 0, 50)
+BalantButton.Font = Enum.Font.SciFi
+BalantButton.Text = "Balant"
+BalantButton.TextColor3 = Color3.new(0, 0, 0)
+BalantButton.TextSize = 14
+
+WorldButton.Name = "WorldButton"
+WorldButton.Parent = Selectionrame
+WorldButton.BackgroundColor3 = Color3.new(1, 1, 1)
+WorldButton.BackgroundTransparency = 1
+WorldButton.BorderSizePixel = 0
+WorldButton.Position = UDim2.new(0, 0, 0.216222569, 0)
+WorldButton.Size = UDim2.new(0, 131, 0, 50)
+WorldButton.Font = Enum.Font.SciFi
+WorldButton.Text = "World"
+WorldButton.TextColor3 = Color3.new(0, 0, 0)
+WorldButton.TextSize = 14
+
+RenderButton.Name = "RenderButton"
+RenderButton.Parent = Selectionrame
+RenderButton.BackgroundColor3 = Color3.new(1, 1, 1)
+RenderButton.BackgroundTransparency = 1
+RenderButton.BorderSizePixel = 0
+RenderButton.Position = UDim2.new(0, 0, 0.456532717, 0)
+RenderButton.Size = UDim2.new(0, 131, 0, 50)
+RenderButton.Font = Enum.Font.SciFi
+RenderButton.Text = "Render"
+RenderButton.TextColor3 = Color3.new(0, 0, 0)
+RenderButton.TextSize = 14
+
+UtilityButton.Name = "UtilityButton"
+UtilityButton.Parent = Selectionrame
+UtilityButton.BackgroundColor3 = Color3.new(1, 1, 1)
+UtilityButton.BackgroundTransparency = 1
+UtilityButton.BorderSizePixel = 0
+UtilityButton.Position = UDim2.new(0, 0, 0.720098495, 0)
+UtilityButton.Size = UDim2.new(0, 131, 0, 50)
+UtilityButton.Font = Enum.Font.SciFi
+UtilityButton.Text = "Utility"
+UtilityButton.TextColor3 = Color3.new(0, 0, 0)
+UtilityButton.TextSize = 14
+
+WorldFrame.Name = "WorldFrame"
+WorldFrame.Parent = GodWareGui
+WorldFrame.BackgroundColor3 = Color3.new(0.921569, 1, 0.054902)
+WorldFrame.BorderSizePixel = 0
+WorldFrame.Position = UDim2.new(0.250163525, 0, 0.125776395, 0)
+WorldFrame.Size = UDim2.new(0, 125, 0, 253)
+
+WorldLabel.Name = "WorldLabel"
+WorldLabel.Parent = WorldFrame
+WorldLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+WorldLabel.BackgroundTransparency = 1
+WorldLabel.Size = UDim2.new(0, 125, 0, 50)
+WorldLabel.Font = Enum.Font.SciFi
+WorldLabel.Text = "World"
+WorldLabel.TextColor3 = Color3.new(0, 0, 0)
+WorldLabel.TextSize = 14
+
+AntiVoidButton.Name = "AntiVoidButton"
+AntiVoidButton.Parent = WorldFrame
+AntiVoidButton.BackgroundColor3 = Color3.new(0.921569, 1, 0.054902)
+AntiVoidButton.BorderSizePixel = 0
+AntiVoidButton.Position = UDim2.new(0, 0, 0.197628453, 0)
+AntiVoidButton.Size = UDim2.new(0, 125, 0, 50)
+AntiVoidButton.Font = Enum.Font.SciFi
+AntiVoidButton.Text = "AntiVoid"
+AntiVoidButton.TextColor3 = Color3.new(0, 0, 0)
+AntiVoidButton.TextSize = 14
+AntiVoidButton.MouseButton1Click:Connect(function()
+	local antivoidpart = Instance.new("Part", Workspace)
+	antivoidpart.Name = "AntiVoid"
+	antivoidpart.Size = Vector3.new(2100, 0.5, 2000) 
+
+	antivoidpart.Position = Vector3.new(160.5, 25, 247.5)
+	antivoidpart.Transparency = 1
+	antivoidpart.Anchored = true
+	antivoidpart.Touched:connect(function(dumbcocks)
+		if dumbcocks.Parent:WaitForChild("Humanoid") and dumbcocks.Parent.Name == lplr.Name then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState("Jumping")
+			wait(0.2)
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState("Jumping")
+			wait(0.2)
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState("Jumping")
+		end
+	end)
+end)
+
+ClickTPButton.Name = "ClickTPButton"
+ClickTPButton.Parent = WorldFrame
+ClickTPButton.BackgroundColor3 = Color3.new(0.921569, 1, 0.054902)
+ClickTPButton.BorderSizePixel = 0
+ClickTPButton.Position = UDim2.new(0, 0, 0.44268775, 0)
+ClickTPButton.Size = UDim2.new(0, 125, 0, 50)
+ClickTPButton.Font = Enum.Font.SciFi
+ClickTPButton.Text = "ClickTP"
+ClickTPButton.TextColor3 = Color3.new(0, 0, 0)
+ClickTPButton.TextSize = 14
+ClickTPButton.MouseButton1Click:Connect(function()
+	game:GetService("StarterGui"):SetCore("SendNotification",{
+		Title = "Click TP Enabled!",		
+		Text = "Tap Left Alt to TP to your mouse.",
+		Duration = 10,
+	})
+	local player = game.Players.LocalPlayer
+	mouse = player:GetMouse()
+
+	game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+		if inputObject.KeyCode == Enum.KeyCode.LeftAlt then
+			local pos = mouse.Hit+Vector3.new(0,2.5,0)
+			pos = CFrame.new(pos.X,pos.Y,pos.Z)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+		end
+	end)
+	print("Successfully Executed Script!")
+end)
+
+SpeedJumpButton.Name = "SpeedJumpButton"
+SpeedJumpButton.Parent = WorldFrame
+SpeedJumpButton.BackgroundColor3 = Color3.new(0.921569, 1, 0.054902)
+SpeedJumpButton.BorderSizePixel = 0
+SpeedJumpButton.Position = UDim2.new(0, 0, 0.711462498, 0)
+SpeedJumpButton.Size = UDim2.new(0, 125, 0, 50)
+SpeedJumpButton.Font = Enum.Font.SciFi
+SpeedJumpButton.Text = "Speed & Jump"
+SpeedJumpButton.TextColor3 = Color3.new(0, 0, 0)
+SpeedJumpButton.TextSize = 14
+SpeedJumpButton.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
+
+BalantFrame.Name = "BalantFrame"
+BalantFrame.Parent = GodWareGui
+BalantFrame.BackgroundColor3 = Color3.new(0.921569, 1, 0.054902)
+BalantFrame.BorderSizePixel = 0
+BalantFrame.Position = UDim2.new(0.413015068, 0, 0.125776395, 0)
+BalantFrame.Size = UDim2.new(0, 125, 0, 253)
+BalantFrame.Active = true
+BalantFrame.Draggable = true
+
+BalantLabel.Name = "BalantLabel"
+BalantLabel.Parent = BalantFrame
+BalantLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+BalantLabel.BackgroundTransparency = 1
+BalantLabel.Size = UDim2.new(0, 125, 0, 50)
+BalantLabel.Font = Enum.Font.SciFi
+BalantLabel.Text = "Balant"
+BalantLabel.TextColor3 = Color3.new(0, 0, 0)
+BalantLabel.TextSize = 14
+
+AutoToxicButton.Name = "AutoToxicButton"
+AutoToxicButton.Parent = BalantFrame
+AutoToxicButton.BackgroundColor3 = Color3.new(0.921569, 1, 0.054902)
+AutoToxicButton.BorderSizePixel = 0
+AutoToxicButton.Position = UDim2.new(0, 0, 0.197628453, 0)
+AutoToxicButton.Size = UDim2.new(0, 125, 0, 50)
+AutoToxicButton.Font = Enum.Font.SciFi
+AutoToxicButton.Text = "AutoToxic"
+AutoToxicButton.TextColor3 = Color3.new(0, 0, 0)
+AutoToxicButton.TextSize = 14
+AutoToxicButton.MouseButton1Click:Connect(function()
+
+	local KILL_MESSAGE = "Get GodWare Hub!"
+
+	local Players = game:GetService("Players")
+	Players.PlayerAdded:Connect(function(player)
+
+		player.CharacterAdded:Connect(function(character)
+
+			local humanoid = character:WaitForChild("Humanoid")
+
+			humanoid.Died:Connect(function()
+
+				local rootPart = character:WaitForChild("HumanoidRootPart")
+				local sound = Instance.new("Sound")
+				
+				sound.SoundId = "rbxassetid://123456789" 
+				sound.Parent = rootPart
+				sound.Volume = 1
+				sound.PlaybackSpeed = 1
+
+				sound:Play()
+
+				local chatService = game:GetService("Chat")
+				chatService:Chat(rootPart, KILL_MESSAGE)
+			end)
+		end)
+	end)
+end)
+
+ClickTPButton_2.Name = "ClickTPButton"
+ClickTPButton_2.Parent = BalantFrame
+ClickTPButton_2.BackgroundColor3 = Color3.new(0.921569, 1, 0.054902)
+ClickTPButton_2.BorderSizePixel = 0
+ClickTPButton_2.Position = UDim2.new(0, 0, 0.44268775, 0)
+ClickTPButton_2.Size = UDim2.new(0, 125, 0, 50)
+ClickTPButton_2.Font = Enum.Font.SciFi
+ClickTPButton_2.Text = "SpinBot"
+ClickTPButton_2.TextColor3 = Color3.new(0, 0, 0)
+ClickTPButton_2.TextSize = 14
+ClickTPButton_2.MouseButton1Click:Connect(function()
+local power = 150
+
+	game:GetService('RunService').Stepped:connect(function()
+		game.Players.LocalPlayer.Character.Head.CanCollide = false
+		game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
+		game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
+	end)
+	wait(.1)
+	local bambam = Instance.new("BodyThrust")
+	bambam.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+	bambam.Force = Vector3.new(power,0,power)
+	bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+end)
+
+SpeedJumpButton_2.Name = "SpeedJumpButton"
+SpeedJumpButton_2.Parent = BalantFrame
+SpeedJumpButton_2.BackgroundColor3 = Color3.new(0.921569, 1, 0.054902)
+SpeedJumpButton_2.BorderSizePixel = 0
+SpeedJumpButton_2.Position = UDim2.new(0, 0, 0.711462498, 0)
+SpeedJumpButton_2.Size = UDim2.new(0, 125, 0, 50)
+SpeedJumpButton_2.Font = Enum.Font.SciFi
+SpeedJumpButton_2.Text = "ESP"
+SpeedJumpButton_2.TextColor3 = Color3.new(0, 0, 0)
+SpeedJumpButton_2.TextSize = 14
+SpeedJumpButton.MouseButton1Click:Connect(function()
+	local Holder = Instance.new("Folder", game.CoreGui)
+	Holder.Name = "ESP"
+
+	local Box = Instance.new("BoxHandleAdornment")
+	Box.Name = "nilBox"
+	Box.Size = Vector3.new(4, 7, 4)
+	Box.Color3 = Color3.new(100 / 255, 100 / 255, 100 / 255)
+	Box.Transparency = 0.7
+	Box.ZIndex = 0
+	Box.AlwaysOnTop = true
+	Box.Visible = true
+
+	local NameTag = Instance.new("BillboardGui")
+	NameTag.Name = "nilNameTag"
+	NameTag.Enabled = false
+	NameTag.Size = UDim2.new(0, 200, 0, 50)
+	NameTag.AlwaysOnTop = true
+	NameTag.StudsOffset = Vector3.new(0, 1.8, 0)
+	local Tag = Instance.new("TextLabel", NameTag)
+	Tag.Name = "Tag"
+	Tag.BackgroundTransparency = 1
+	Tag.Position = UDim2.new(0, -50, 0, 0)
+	Tag.Size = UDim2.new(0, 300, 0, 20)
+	Tag.TextSize = 20
+	Tag.TextColor3 = Color3.new(100 / 255, 100 / 255, 100 / 255)
+	Tag.TextStrokeColor3 = Color3.new(0 / 255, 0 / 255, 0 / 255)
+	Tag.TextStrokeTransparency = 0.4
+	Tag.Text = "nil"
+	Tag.Font = Enum.Font.SourceSansBold
+	Tag.TextScaled = false
+
+	local LoadCharacter = function(v)
+		repeat wait() until v.Character ~= nil
+		v.Character:WaitForChild("Humanoid")
+		local vHolder = Holder:FindFirstChild(v.Name)
+		vHolder:ClearAllChildren()
+		local b = Box:Clone()
+		b.Name = v.Name .. "Box"
+		b.Adornee = v.Character
+		b.Parent = vHolder
+		local t = NameTag:Clone()
+		t.Name = v.Name .. "NameTag"
+		t.Enabled = true
+		t.Parent = vHolder
+		t.Adornee = v.Character:WaitForChild("Head", 5)
+		if not t.Adornee then
+			return UnloadCharacter(v)
+		end
+		t.Tag.Text = v.Name
+		b.Color3 = Color3.new(v.TeamColor.r, v.TeamColor.g, v.TeamColor.b)
+		t.Tag.TextColor3 = Color3.new(v.TeamColor.r, v.TeamColor.g, v.TeamColor.b)
+		local Update
+		local UpdateNameTag = function()
+			if not pcall(function()
+					v.Character.Humanoid.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None
+					local maxh = math.floor(v.Character.Humanoid.MaxHealth)
+					local h = math.floor(v.Character.Humanoid.Health)
+					t.Tag.Text = v.Name .. "\n" .. ((maxh ~= 0 and tostring(math.floor((h / maxh) * 100))) or "0") .. "%  " .. tostring(h) .. "/" .. tostring(maxh)
+				end) then
+				Update:Disconnect()
+			end
+		end
+		UpdateNameTag()
+		Update = v.Character.Humanoid.Changed:Connect(UpdateNameTag)
+	end
+
+	local UnloadCharacter = function(v)
+		local vHolder = Holder:FindFirstChild(v.Name)
+		if vHolder and (vHolder:FindFirstChild(v.Name .. "Box") ~= nil or vHolder:FindFirstChild(v.Name .. "NameTag") ~= nil) then
+			vHolder:ClearAllChildren()
+		end
+	end
+
+	local LoadPlayer = function(v)
+		local vHolder = Instance.new("Folder", Holder)
+		vHolder.Name = v.Name
+		v.CharacterAdded:Connect(function()
+			pcall(LoadCharacter, v)
+		end)
+		v.CharacterRemoving:Connect(function()
+			pcall(UnloadCharacter, v)
+		end)
+		v.Changed:Connect(function(prop)
+			if prop == "TeamColor" then
+				UnloadCharacter(v)
+				wait()
+				LoadCharacter(v)
+			end
+		end)
+		LoadCharacter(v)
+	end
+
+	local UnloadPlayer = function(v)
+		UnloadCharacter(v)
+		local vHolder = Holder:FindFirstChild(v.Name)
+		if vHolder then
+			vHolder:Destroy()
+		end
+	end
+
+	for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+		spawn(function() pcall(LoadPlayer, v) end)
+	end
+
+	game:GetService("Players").PlayerAdded:Connect(function(v)
+		pcall(LoadPlayer, v)
+	end)
+
+	game:GetService("Players").PlayerRemoving:Connect(function(v)
+		pcall(UnloadPlayer, v)
+	end)
+
+	game:GetService("Players").LocalPlayer.NameDisplayDistance = 0
+
+end)
+
+RenderFrame.Name = "RenderFrame"
+RenderFrame.Parent = GodWareGui
+RenderFrame.BackgroundColor3 = Color3.new(0.921569, 1, 0.054902)
+RenderFrame.BorderSizePixel = 0
+RenderFrame.Position = UDim2.new(0.577828646, 0, 0.125776395, 0)
+RenderFrame.Size = UDim2.new(0, 125, 0, 253)
+RenderFrame.Active = true
+RenderFrame.Draggable = true
+
+RenderLabel.Name = "RenderLabel"
+RenderLabel.Parent = RenderFrame
+RenderLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+RenderLabel.BackgroundTransparency = 1
+RenderLabel.Size = UDim2.new(0, 125, 0, 50)
+RenderLabel.Font = Enum.Font.SciFi
+RenderLabel.Text = "Render"
+RenderLabel.TextColor3 = Color3.new(0, 0, 0)
+RenderLabel.TextSize = 14
+
+RenderLabel_2.Name = "RenderLabel"
+RenderLabel_2.Parent = RenderFrame
+RenderLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+RenderLabel_2.BackgroundTransparency = 1
+RenderLabel_2.Position = UDim2.new(0, 0, 0.391304344, 0)
+RenderLabel_2.Size = UDim2.new(0, 125, 0, 50)
+RenderLabel_2.Font = Enum.Font.SciFi
+RenderLabel_2.Text = "Coming Soon.."
+RenderLabel_2.TextColor3 = Color3.new(0, 0, 0)
+RenderLabel_2.TextSize = 14
+
+UtilityFrame.Name = "UtilityFrame"
+UtilityFrame.Parent = GodWareGui
+UtilityFrame.BackgroundColor3 = Color3.new(0.921569, 1, 0.054902)
+UtilityFrame.BorderSizePixel = 0
+UtilityFrame.Position = UDim2.new(0.753433645, 0, 0.125776395, 0)
+UtilityFrame.Size = UDim2.new(0, 125, 0, 253)
+UtilityFrame.Active = true
+UtilityFrame.Draggable = true
+
+UtilityLabel.Name = "UtilityLabel"
+UtilityLabel.Parent = UtilityFrame
+UtilityLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+UtilityLabel.BackgroundTransparency = 1
+UtilityLabel.Size = UDim2.new(0, 125, 0, 50)
+UtilityLabel.Font = Enum.Font.SciFi
+UtilityLabel.Text = "Utility"
+UtilityLabel.TextColor3 = Color3.new(0, 0, 0)
+UtilityLabel.TextSize = 14
+
+SpamCreditsButton.Name = "SpamCreditsButton"
+SpamCreditsButton.Parent = UtilityFrame
+SpamCreditsButton.BackgroundColor3 = Color3.new(0.921569, 1, 0.054902)
+SpamCreditsButton.BorderSizePixel = 0
+SpamCreditsButton.Position = UDim2.new(0, 0, 0.197146207, 0)
+SpamCreditsButton.Size = UDim2.new(0, 124, 0, 50)
+SpamCreditsButton.Font = Enum.Font.SciFi
+SpamCreditsButton.Text = "SpamCredits"
+SpamCreditsButton.TextColor3 = Color3.new(0, 0, 0)
+SpamCreditsButton.TextSize = 14
+SpamCreditsButton.MouseButton1Click:Connect(function()
+	while true do wait(1) 
+
+		local A_1 = "GodWare.|By Samuel" local A_2 = "All" 
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) end
+end)
+-- Scripts:
+spawn(function () -- BalantButton.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = BalantButton
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Parent.BalantFrame.Visible == false then
+			script.Parent.Parent.Parent.BalantFrame.Visible = true
+		else
+			script.Parent.Parent.Parent.BalantFrame.Visible = false
+		end
+	end
+	)
+	
+	
+	
+
+end)
+
+spawn(function () -- WorldButton.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = WorldButton
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Parent.WorldFrame.Visible == false then
+			script.Parent.Parent.Parent.WorldFrame.Visible = true
+		else
+			script.Parent.Parent.Parent.WorldFrame.Visible = false
+		end
+	end
+	)
+	
+	
+	
+
+end)
+
+spawn(function () -- RenderButton.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = RenderButton
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Parent.RenderFrame.Visible == false then
+			script.Parent.Parent.Parent.RenderFrame.Visible = true
+		else
+			script.Parent.Parent.Parent.RenderFrame.Visible = false
+		end
+	end
+	)
+	
+	
+	
+
+end)
+
+spawn(function () -- UtilityButton.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = UtilityButton
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Parent.UtilityFrame.Visible == false then
+			script.Parent.Parent.Parent.UtilityFrame.Visible = true
+		else
+			script.Parent.Parent.Parent.UtilityFrame.Visible = false
+		end
+	end
+	)
+	
+	
+	
+
+end)
+
+spawn(function () -- Selectionrame.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = Selectionrame
+	local UserInputService = game:GetService("UserInputService")
+	
+	function onKeyPress(inputObject, gameProcessedEvent)
+		if not gameProcessedEvent then
+			if inputObject.KeyCode == Enum.KeyCode.RightShift then
+				if script.Parent.Visible == false then
+					script.Parent.Visible = true
+				else
+					script.Parent.Visible = false
+				end
+			end
+		end
+		
+	end
+	
+	UserInputService.InputBegan:Connect(onKeyPress)
+	
+
+end) 
+
+spawn(function () -- WorldFrame.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = WorldFrame
+	local UserInputService = game:GetService("UserInputService")
+	
+	function onKeyPress(inputObject, gameProcessedEvent)
+		if not gameProcessedEvent then
+			if inputObject.KeyCode == Enum.KeyCode.RightShift then
+				if script.Parent.Visible == false then
+					script.Parent.Visible = true
+				else
+					script.Parent.Visible = false
+				end
+			end
+		end
+		
+	end
+	
+	UserInputService.InputBegan:Connect(onKeyPress)
+	
+
+end)
+
+spawn(function () -- BalantFrame.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = BalantFrame
+	local UserInputService = game:GetService("UserInputService")
+	
+	function onKeyPress(inputObject, gameProcessedEvent)
+		if not gameProcessedEvent then
+			if inputObject.KeyCode == Enum.KeyCode.RightShift then
+				if script.Parent.Visible == false then
+					script.Parent.Visible = true
+				else
+					script.Parent.Visible = false
+				end
+			end
+		end
+		
+	end
+	
+	UserInputService.InputBegan:Connect(onKeyPress)
+	
+
+end)
+
+spawn(function () -- RenderFrame.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = RenderFrame
+	local UserInputService = game:GetService("UserInputService")
+	
+	function onKeyPress(inputObject, gameProcessedEvent)
+		if not gameProcessedEvent then
+			if inputObject.KeyCode == Enum.KeyCode.RightShift then
+				if script.Parent.Visible == false then
+					script.Parent.Visible = true
+				else
+					script.Parent.Visible = false 
+				end
+			end
+		end
+		
+	end
+	
+	UserInputService.InputBegan:Connect(onKeyPress)
+	
+
+end)
+
+spawn(function () -- UtilityFrame.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = UtilityFrame
+	local UserInputService = game:GetService("UserInputService")
+	
+	function onKeyPress(inputObject, gameProcessedEvent)
+		if not gameProcessedEvent then
+			if inputObject.KeyCode == Enum.KeyCode.RightShift then
+				if script.Parent.Visible == false then
+					script.Parent.Visible = true
+				else
+					script.Parent.Visible = false
+				end
+			end
+		end
+		
+	end
+	
+	UserInputService.InputBegan:Connect(onKeyPress)
+	
+
+end)
+
